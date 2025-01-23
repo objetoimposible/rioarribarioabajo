@@ -1,0 +1,198 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foundation for Sites</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+  <div class="off-canvas-content" data-off-canvas-content>
+    <!-- contenido central -->
+    <div class="container">
+      <div id="video_1">
+        <div class="grid-x">
+          <div clas="small-12 cell">
+            <!-- <video id="video-intro" autoplay="autoplay" loop="">
+            <source src="assets/rioarriba_bg_muted.mp4" type="video/mp4" />
+            Your browser does not support the video tag or the file format of this video.
+          </video> -->
+          </div>
+        </div>
+      </div>
+      <div id="words-container">
+        <span class="word">Contenedores</span>
+        <span class="word">Producción</span>
+        <span class="word" id="content-toggle" data-toggle="offCanvas">Contemplación</span>
+      </div>
+      <!-- <button class="button">boton TAG</button> -->
+    </div>
+  </div>
+
+
+  <div class="off-canvas position-right" id="offCanvas" data-off-canvas>
+    <!-- slide panel -->
+    <section class="navigation-slide">
+      <div class="content">
+        <h2 class="ns-header-title">cuaderno de campo</h2>
+        <div class="grid-container full">
+          <div class="grid-x">
+            <div class="small-12 cell">
+              <ul class="accordion" data-accordion data-allow-all-closed="true">
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title">
+                    <h3>texto</h3>
+                  </a>
+                  <div class="accordion-content" data-tab-content>
+                    <p>diversos modos de vida del río Maullín: pesca ribereña, estuarina y marina, recolección de ribera
+                      y
+                      de orilla, marisca, buceo, agricultura de subsistencia y cultivo de pelillo. Mediante estas
+                      prácticas, la biodiversidad se integra en la historia</p>
+                    <p>humana, transformando a árboles, peces, plantas, hongos, aves, moluscos,
+                      mamíferos, en co-habitantes del mundo (Haraway, 1995; Skewes, 2019)</p>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title">
+                    <h3>Ficha técnica</h3>
+                  </a>
+                  <div class="accordion-content" data-tab-content>
+                    <ul>
+                      <li><b>dia</b> 25 de abril</li>
+                      <li><b>hora</b> 13:65</li>
+                      <li><b>ubicacion</b> el rio de lava</li>
+                      <li><b>modalidad</b> teledirigido</li>
+                      <li><b>tipo de lente</b> 50 dioptrias</li>
+                      <li><b>temperatura</b> 45°C</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title">
+                    <h3>Imagen</h3>
+                  </a>
+                  <div class="accordion-content" data-tab-content>
+                    <img src="assets/foto.jpg">
+                    <br /><br />
+                    <video class="video-content" controls>
+                      <source src="assets/IMG_0432.MOV" type="video/mp4" />
+                      Your browser does not support the video tag or the file format of this video.
+                    </video>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title">
+                    <h3>Mapa</h3>
+                  </a>
+                  <div class="accordion-content" data-tab-content>
+                    <img src="assets/mapa.jpg">
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title">
+                    <h3>Audio</h3>
+                  </a>
+                  <div class="accordion-content" data-tab-content>
+                    <audio controls>
+                      <source src="assets/AUDIO-2025-01-22-21-10-36.mp3" type="audio/mpeg">
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                </li>
+                <li class="accordion-item">
+                  <a href="sedimento.html" class="accordion-title">
+                    <h3>Sedimento</h3>
+                  </a>
+
+                  <div class="accordion-content" data-tab-content>
+                    <p>Contenido</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <button class="ns-exit button" aria-label="Close menu" type="button" data-close>
+          <span aria-hidden="true">Cerrar</span>
+        </button>
+      </div>
+    </section>
+  </div>
+
+  <!-- <div class="navigation-overlay"></div> -->
+
+
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="node_modules/what-input/dist/what-input.js"></script>
+  <script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.js"
+    integrity="sha512-7Zgn4mmO9yGGB1j9yP0mZvUPWBVg0fCcUMsYUV6FX7XIKQfb/dhGxsKh794YAzXH2F/+Z3eJL4mrTilrT2ZeFQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/SlidePanel.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    setTimeout(function () { $('#video_1').fadeOut(500); }, 31500);
+    var map = L.map('map').setView([51.505, -0.09], 13);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const words = document.querySelectorAll('.word');
+      const container = document.getElementById('words-container');
+      const containerWidth = container.offsetWidth;
+      const containerHeight = container.offsetHeight;
+
+      function randomPosition() {
+        let positions = [];
+
+        words.forEach(word => {
+          let overlap;
+          let posX, posY;
+
+          do {
+            // Générer une position aléatoire
+            posX = Math.random() * (containerWidth - word.offsetWidth);
+            posY = Math.random() * (containerHeight - word.offsetHeight);
+
+            // Vérifier la superposition avec les autres mots
+            overlap = positions.some(pos => {
+              return !(posX + word.offsetWidth < pos.x ||
+                posX > pos.x + pos.width ||
+                posY + word.offsetHeight < pos.y ||
+                posY > pos.y + pos.height);
+            });
+          } while (overlap);
+
+          // Appliquer la position si pas de superposition
+          word.style.left = `${posX}px`;
+          word.style.top = `${posY}px`;
+
+          // Enregistrer la position
+          positions.push({ x: posX, y: posY, width: word.offsetWidth, height: word.offsetHeight });
+        });
+      }
+
+      // Initialiser les positions
+      randomPosition();
+
+      // Mettre à jour les positions aléatoires au clic
+      // words.forEach(word => {
+      //  word.addEventListener('click', randomPosition);
+      // });
+    });
+
+  </script>
+</body>
+
+</html>
